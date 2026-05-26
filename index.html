@@ -1,182 +1,384 @@
-<!DOCTYPE html>
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PTA適正化推進委員会</title>
+  <meta name="description" content="保護者、PTA役員、教育委員会・学校関係者が、PTA運営の論点を実資料と根拠から確認するためのWeb版ハンドブックです。">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">本文へ移動</a>
+  <header class="site-header">
+    <div class="header-inner">
+      <a class="brand" href="index.html" data-nav-link>
+        <span class="brand-mark">PTA</span>
+        <span>PTA適正化推進委員会<span class="brand-sub">資料と根拠に戻って考える</span></span>
+      </a>
+      <div class="header-actions">
+        <a class="quick-link" href="documents.html" data-nav-link>資料を見る</a>
+        <button class="menu-button" type="button" aria-label="メニューを開閉" aria-expanded="false" aria-controls="site-menu" data-menu-button>
+          <span class="menu-icon" aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+    <nav class="menu-panel" id="site-menu" aria-label="サイト目次" data-menu-panel>
+      <div class="menu-intro">
+        <p class="menu-kicker">PTA運営適正化ハンドブック</p>
+        <p>章、立場別、論点、資料、実務キットへ直接移動できます。</p>
+      </div>
+      <div class="menu-grid handbook-menu-grid">
+        <section class="menu-group"><h2>はじめに</h2><a href="index.html" data-nav-link>トップ</a><a href="about.html" data-nav-link>このサイトについて</a><a href="index.html#three-min" data-nav-link>3分で読む</a><a href="index.html#reading-guide" data-nav-link>読み方ガイド</a><a href="index.html#site-index" data-nav-link>サイトマップ</a><a href="support.html" data-nav-link>支援・応援</a></section>
+        <section class="menu-group"><h2>立場別</h2><a href="parents.html" data-nav-link>保護者の方へ</a><a href="officers.html" data-nav-link>PTA役員の方へ</a><a href="board.html" data-nav-link>教育委員会・学校関係者の方へ</a><a href="index.html#roles" data-nav-link>立場別ガイド</a><a href="#">立場別ブリーフ</a></section>
+        <section class="menu-group"><h2>PTA運営の基本</h2><a href="index.html#what-is-pta" data-nav-link>PTAとは何か</a><a href="index.html#voluntary" data-nav-link>任意加入</a><a href="parents.html#application-record-risk" data-nav-link>入会申込記録</a><a href="officers.html#rules" data-nav-link>会則</a><a href="officers.html#withdrawal" data-nav-link>入退会手続</a><a href="officers.html#fees" data-nav-link>会費徴収</a><a href="officers.html#fees" data-nav-link>会計の透明化</a><a href="parents.html#privacy" data-nav-link>個人情報</a><a href="officers.html#selection" data-nav-link>役員選出</a><a href="officers.html#nonmember" data-nav-link>非会員児童生徒への配慮</a></section>
+        <section class="menu-group"><h2>学校との関係</h2><a href="index.html#school-pta" data-nav-link>学校とPTAの分離</a><a href="board.html#fees" data-nav-link>学校徴収金</a><a href="board.html#apps" data-nav-link>学校アプリ・連絡ツール</a><a href="board.html#staff" data-nav-link>教職員関与</a><a href="board.html#staff" data-nav-link>職務専念義務</a><a href="board.html#facilities" data-nav-link>学校施設利用</a><a href="#">コミュニティ・スクール</a><a href="board.html#staff" data-nav-link>働き方改革とPTA</a><a href="board.html#delegation" data-nav-link>委任契約で校務化できるのか</a><a href="board.html#rules" data-nav-link>要綱・内規の限界</a></section>
+        <section class="menu-group"><h2>資料を見る</h2><a href="documents.html" data-nav-link>実資料・開示資料</a><a href="documents-local.html#national-map" data-nav-link>全国資料館</a><a href="documents-local.html" data-nav-link>自治体別資料</a><a href="documents-theme.html" data-nav-link>テーマ別資料</a><a href="documents-local.html#national-map" data-nav-link>全国教育委員会回答マップ</a><a href="documents-local.html#local-resource-list" data-nav-link>教育委員会回答DB</a><a href="documents-local.html#local-resource-list" data-nav-link>教育委員会回答索引</a><a href="documents.html#document-types" data-nav-link>公文書アーカイブ</a></section>
+        <section class="menu-group"><h2>根拠を確認する</h2><a href="laws.html" data-nav-link>法令・一次資料</a><a href="laws.html#law-map" data-nav-link>法制度マップ</a><a href="laws.html#evidence-map" data-nav-link>根拠マップ</a><a href="laws.html#claim-evidence" data-nav-link>主張と根拠の対応表</a><a href="laws.html#citation-guide" data-nav-link>引用・出典の書き方</a><a href="laws.html#source-policy" data-nav-link>資料確認・出典方針</a><a href="laws.html#glossary" data-nav-link>用語集</a></section>
+        <section class="menu-group"><h2>論考・記事</h2><a href="articles.html" data-nav-link>論考・記事一覧</a><a href="articles.html#research-archive" data-nav-link>論考・研究アーカイブ</a><a href="#">調査報告</a><a href="#">総合分析レポート</a><a href="#">オプトアウト方式の検討</a><a href="articles.html#article-list" data-nav-link>学校徴収金とPTA会費</a><a href="articles.html#article-list" data-nav-link>個人情報と第三者提供</a><a href="articles.html#article-list" data-nav-link>職務専念義務</a><a href="articles.html#article-list" data-nav-link>学校施設利用</a></section>
+        <section class="menu-group"><h2>実務キット</h2><a href="kit.html#disclosure" data-nav-link>情報公開請求キット</a><a href="kit.html#submission" data-nav-link>提出文例キット</a><a href="kit.html#interview" data-nav-link>聞き取り記録テンプレート</a><a href="kit.html#timeline" data-nav-link>時系列整理テンプレート</a><a href="kit.html#audit" data-nav-link>住民監査請求準備</a><a href="kit.html#print" data-nav-link>印刷用資料キット</a><a href="kit.html#diagnosis" data-nav-link>PTA運営適正化診断</a></section>
+      </div>
+    </nav>
+  </header>
 
-<html lang="ja"><head>
-<!-- Google tag (gtag.js) -->
-<script async="" src="https://www.googletagmanager.com/gtag/js?id=G-443ERNB7SH"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-443ERNB7SH');
-</script>
-<meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="#0b2a4a" name="theme-color"/><meta content="light" name="color-scheme"/>
-<link href="assets/favicon.svg" rel="icon" type="image/svg+xml"/>
-<link href="assets/favicon-32.png" rel="icon" sizes="32x32" type="image/png"/>
-<link href="assets/apple-touch-icon.png" rel="apple-touch-icon"/>
-<link href="https://ptaorg.github.io/pta/index.html" rel="canonical"/>
-<title>PTA適正化推進委員会 | 教育委員会回答・公文書・制度分析</title>
-<meta content="PTA問題を、教育委員会回答・公文書開示資料・学校配布文書・法制度にもとづいて整理する研究サイト。教育委員会向け指針、全国回答DB、適正化診断を中心に公開しています。" name="description"/>
-<meta content="index,follow,max-image-preview:large" name="robots"/>
-<meta content="website" property="og:type"/>
-<meta content="PTA適正化推進委員会 | 教育委員会回答・公文書・制度分析" property="og:title"/>
-<meta content="PTA問題を、教育委員会回答・公文書開示資料・学校配布文書・法制度にもとづいて整理する研究サイト。教育委員会向け指針、全国回答DB、適正化診断を中心に公開しています。" property="og:description"/>
-<meta content="https://ptaorg.github.io/pta/index.html" property="og:url"/>
-<meta content="https://ptaorg.github.io/pta/assets/og-image.png" property="og:image"/>
-<meta content="summary" name="twitter:card"/>
-<link href="manifest.webmanifest" rel="manifest"/>
-<link href="https://fonts.googleapis.com" rel="preconnect"/>
-<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-<script data-generated="site-quality" type="application/ld+json">{"@context":"https://schema.org","@type":"WebPage","name":"PTA適正化推進委員会 | 教育委員会回答・公文書・制度分析","description":"PTA問題を、教育委員会回答・公文書開示資料・学校配布文書・法制度にもとづいて整理する研究サイト。教育委員会向け指針、全国回答DB、適正化診断を中心に公開しています。","url":"https://ptaorg.github.io/pta/index.html","isPartOf":{"@type":"WebSite","name":"PTA適正化推進委員会","url":"https://ptaorg.github.io/pta/index.html"},"inLanguage":"ja"}</script><link href="https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700;900&amp;family=Noto+Sans+JP:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
-<link href="css/style.css" rel="stylesheet"/>
-<style>
-/* トップページ専用：本文中心・スマホ優先 */
-.home-hero{background:#f8fafc;border-bottom:1px solid #d8e0ea;padding:50px 0 42px}
-.home-wrap{width:min(100% - 40px,980px);margin-inline:auto}
-.home-kicker{display:inline-block;background:#0b2a4a;color:#fff;border-radius:999px;padding:.32rem .75rem;font-size:.78rem;font-weight:900;letter-spacing:.04em;margin-bottom:14px}
-.home-hero h1{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:clamp(1.65rem,4vw,2.75rem);line-height:1.34;margin:0 0 16px;letter-spacing:-.02em}
-.home-lead{max-width:900px;color:#334155;font-size:1.04rem;line-height:1.95;margin:0}
-.home-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
-.home-btn{display:inline-flex;align-items:center;justify-content:center;text-decoration:none!important;border-radius:999px;padding:.84rem 1.18rem;font-weight:900;line-height:1.25;border:1px solid #0b2a4a;color:#0b2a4a;background:#fff}
-.home-btn.primary{background:#d6a600;border-color:#d6a600;color:#061729!important}
-.home-main{padding:42px 0 62px;background:#fff}
-.home-section{width:min(100% - 40px,980px);margin:0 auto 46px;padding-bottom:40px;border-bottom:1px solid #d8e0ea}
-.home-section:last-child{border-bottom:0;margin-bottom:0;padding-bottom:0}
-.home-section h2{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:clamp(1.34rem,2.7vw,1.9rem);line-height:1.45;margin:0 0 12px}
-.home-section h3{font-family:'Noto Serif JP',serif;color:#0b2a4a;font-size:1.08rem;line-height:1.55;margin:0 0 5px}
-.home-section p{color:#334155;line-height:1.92;margin:0 0 16px}
-.home-line-list{border-top:1px solid #d8e0ea;margin-top:18px}
-.home-line{display:block!important;text-decoration:none!important;color:inherit!important;padding:18px 0;border-bottom:1px solid #d8e0ea;background:transparent!important}
-.home-line strong{display:block;color:#0b2a4a;font-size:1.07rem;line-height:1.55;margin-bottom:4px;background:none!important}
-.home-line span{display:block;color:#475569;font-size:.95rem;line-height:1.8}
-.home-label{display:inline-flex;margin:0 0 7px;padding:.16rem .55rem;border-radius:999px;background:#eef2f7;color:#0b2a4a;font-size:.76rem;font-weight:900;letter-spacing:.02em}
-.home-steps{counter-reset:homeStep;border-top:1px solid #d8e0ea;margin-top:18px}
-.home-step{counter-increment:homeStep;display:block!important;position:relative;text-decoration:none!important;color:inherit!important;padding:18px 0 18px 52px;border-bottom:1px solid #d8e0ea;background:transparent!important}
-.home-step:before{content:counter(homeStep);position:absolute;left:0;top:20px;width:34px;height:34px;border-radius:50%;background:#0b2a4a;color:#fff;display:flex;align-items:center;justify-content:center;font-weight:900;font-size:.95rem}
-.home-step strong{display:block;color:#0b2a4a;font-size:1.06rem;line-height:1.55;margin-bottom:4px;background:none!important}
-.home-step span{display:block;color:#475569;font-size:.94rem;line-height:1.75}
-.home-note{border-left:5px solid #d6a600;background:#fffdf4;padding:12px 14px;margin-top:20px;color:#334155;line-height:1.85}
-.home-plain-list{margin:.2rem 0 0;padding-left:1.15rem;color:#334155;line-height:1.9}
-.home-plain-list li{margin:.35rem 0}
-.home-two{display:grid;grid-template-columns:1fr 1fr;gap:24px;margin-top:18px}
-.home-block{border-top:1px solid #d8e0ea;padding-top:16px}
-.home-block p{font-size:.96rem;color:#475569}
-@media(max-width:720px){.home-wrap,.home-section{width:min(100% - 28px,980px)}.home-hero{padding:34px 0 30px}.home-main{padding:30px 0 44px}.home-section{margin-bottom:34px;padding-bottom:30px}.home-actions{display:block}.home-btn{width:100%;margin:0 0 9px}.home-step{padding-left:44px}.home-step:before{width:30px;height:30px;top:20px}.home-two{display:block}.home-block{margin-top:18px}.home-line strong,.home-step strong,.home-section h3{font-size:1.02rem}}
-</style><meta content="PTA適正化推進委員会 | 教育委員会回答・公文書・制度分析" name="twitter:title"/><meta content="PTA問題を、教育委員会回答・公文書開示資料・学校配布文書・法制度にもとづいて整理する研究サイト。教育委員会向け指針、全国回答DB、適正化診断を中心に公開しています。" name="twitter:description"/></head>
-<body id="page-top"><a class="skip-link" href="#main-content">本文へスキップ</a>
-<header class="site-header"><div class="nav-container">
-<a aria-current="page" class="logo" href="index.html"><span class="logo-mark">POPC</span><span>PTA適正化推進委員会</span></a>
-<nav aria-label="主要ナビゲーション" class="desktop-nav">
-<a aria-current="page" class="nav-link active" href="index.html">トップ</a>
-<div class="nav-item has-dropdown"><a class="nav-link" href="start.html">読む</a><div class="dropdown-menu"><div class="dropdown-col"><h4>入口</h4><ul><li><a href="start.html">3分で読む</a></li><li><a href="edu-board-start.html">教育委員会向け導線</a></li><li><a href="edu-board-guideline.html">教育委員会向け指針</a></li><li><a href="guide.html">立場別ガイド</a></li><li><a href="faq.html">よくある質問</a></li></ul></div></div></div>
-<div class="nav-item has-dropdown"><a class="nav-link" href="responses.html">全国実態</a><div class="dropdown-menu"><div class="dropdown-col"><h4>実態調査</h4><ul><li><a href="responses.html">教育委員会回答DB</a></li><li><a href="archive.html">全国PTA資料館</a></li></ul></div></div></div>
-<div class="nav-item has-dropdown"><a class="nav-link" href="evidence.html">調べる</a><div class="dropdown-menu"><div class="dropdown-col"><h4>制度</h4><ul><li><a href="research.html">論考全文</a></li><li><a href="law.html">法制度マップ</a></li></ul></div><div class="dropdown-col"><h4>参照</h4><ul><li><a href="glossary.html">用語・引用</a></li><li><a href="evidence.html">根拠マップ</a></li></ul></div></div></div>
-<div class="nav-item has-dropdown"><a class="nav-link" href="audit/index.html">行動</a><div class="dropdown-menu"><div class="dropdown-col"><h4>診断・提出</h4><ul><li><a href="audit.html">監査アプリ</a></li><li><a href="kit.html">提出キット</a></li><li><a href="disclosure.html">情報公開・監査</a></li></ul></div></div></div>
-<a class="btn-gold" href="donate.html">ご支援</a></nav>
-<button aria-expanded="false" aria-label="メニューを開く" class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
-</div></header>
-<div class="mobile-overlay" id="mobileOverlay">
-<div class="mobile-group"><div class="mobile-group-title">読む</div>
-<a aria-current="page" class="mobile-link active" href="index.html"><span>Home</span>トップ</a>
-<a class="mobile-link" href="start.html"><span>Start</span>3分で読む</a>
-<a class="mobile-link" href="edu-board-start.html"><span>Route</span>教育委員会向け導線</a>
-<a class="mobile-link" href="edu-board-guideline.html"><span>Board</span>教育委員会向け指針</a>
-<a class="mobile-link" href="issues.html"><span>Issues</span>5大論点</a>
-<a class="mobile-link" href="guide.html"><span>Guide</span>立場別ガイド</a>
-<a class="mobile-link" href="faq.html"><span>FAQ</span>よくある質問</a></div>
-<div class="mobile-group"><div class="mobile-group-title">全国実態</div>
-<a class="mobile-link" href="archive.html"><span>Archive</span>全国PTA資料館</a>
-<a class="mobile-link" href="responses.html"><span>DB</span>教育委員会回答DB</a>
-<a class="mobile-link" href="reports/index.html"><span>Reports</span>運営状況報告書</a></div>
-<div class="mobile-group"><div class="mobile-group-title">調べる</div>
-<a class="mobile-link" href="law.html"><span>Law</span>法制度マップ</a>
-<a class="mobile-link" href="journal/index.html"><span>Journal</span>論考・研究</a>
-<a class="mobile-link" href="glossary.html"><span>Term</span>用語・引用</a>
-<a class="mobile-link" href="evidence.html"><span>Evidence</span>根拠マップ</a></div>
-<div class="mobile-group"><div class="mobile-group-title">行動</div>
-<a class="mobile-link" href="audit/index.html"><span>Audit</span>適正化診断</a>
-<a class="mobile-link" href="kit.html"><span>Kit</span>提出キット</a>
-<a class="mobile-link" href="disclosure.html"><span>Disclosure</span>情報公開・監査</a>
-<a class="mobile-link" href="donate.html"><span>Donate</span>ご支援</a></div>
-<div class="close-overlay" id="closeOverlay">CLOSE ×</div></div>
-<main id="main-content">
-<section class="home-hero"><div class="home-wrap">
-<span class="home-kicker">PTA適正化推進委員会</span>
-<h1>PTAのしくみと学校現場の課題を、立場別に確認する。</h1>
-<p class="home-lead">PTAは、一般に、保護者と教職員が任意に参加して組織する団体です。地域や学校の実情に応じて、子どもたちの活動や学校生活を支える役割を担ってきました。</p>
-<p class="home-lead">一方で実際の学校現場では、入会意思の確認、PTA会費の徴収、個人情報の扱い、教職員の関与、学校施設や学校配布物の利用などをめぐって、学校とPTAの境界が分かりにくくなることがあります。</p>
-<p class="home-lead">PTA適正化推進委員会は、全国の教育委員会への照会回答、公文書開示で取得した資料、実際に学校・PTAから配布された文書を収集・整理し、保護者、PTA役員、学校管理職、教育委員会がそれぞれの立場で確認できるように公開しています。</p>
-<div class="home-actions"><a class="home-btn primary" href="start.html">初めての方へ</a><a class="home-btn" href="guide.html">立場別に読む</a><a class="home-btn" href="responses.html">全国回答DBを見る</a></div>
-</div></section>
-<div class="home-main">
-<section aria-labelledby="roles" class="home-section"><h2 id="roles">立場別に入口を用意しました</h2>
-<p>同じPTA資料でも、保護者、PTA役員、学校管理職、教育委員会では、確認すべき点が異なります。まず自分の立場に近い入口から読み、必要に応じて深掘り資料へ進めます。</p>
-<div class="reader-grid">
-<div class="reader-card"><h3><a href="guide-parent.html">保護者の方へ</a></h3><p>入会申込記録、会費請求、学校からPTAへの情報提供、退会・未加入の扱いを確認します。</p></div>
-<div class="reader-card"><h3><a href="guide-pta.html">PTA役員の方へ</a></h3><p>会員管理、会計、規約、個人情報、学校との関係を、年度運営の中で整理します。</p></div>
-<div class="reader-card"><h3><a href="guide-board.html">学校管理職・教育委員会の方へ</a></h3><p>PTAそのものを管理するのではなく、学校徴収金、学校保有情報、服務、施設・媒体利用を確認します。</p></div>
-<div class="reader-card"><h3><a href="archive.html">資料を確認したい方へ</a></h3><p>自治体回答、開示資料、実際のPTA文書を、論点別・回答類型別に確認します。</p></div>
-</div></section>
-<section aria-labelledby="issues" class="home-section"><h2 id="issues">現場で分かりにくくなりやすいこと</h2>
-<p>PTAの問題は、ひとつの文書だけで判断できるとは限りません。入会、会費、個人情報、教職員関与、学校施設・学校媒体の利用が重なることで、学校とPTAの境界が見えにくくなることがあります。</p>
-<div class="home-two">
-<div class="home-block"><h3>入会意思の確認</h3><p>入学や在籍を理由に、入会申込の記録がないまま会員扱いになっていないかを確認します。<br/><a href="membership.html">入会意思確認を見る</a></p></div>
-<div class="home-block"><h3>会費徴収</h3><p>PTA会費が、教材費・給食費などの学校徴収金と同じ通知・口座・引落しで扱われていないかを確認します。<br/><a href="fee-collection.html">会費徴収を見る</a></p></div>
-<div class="home-block"><h3>個人情報</h3><p>学校が保有する児童・保護者情報を、PTA名簿、地区班、役員選出、当番表に当然利用していないかを確認します。<br/><a href="privacy.html">個人情報を見る</a></p></div>
-<div class="home-block"><h3>教職員・学校資源の関与</h3><p>勤務時間中のPTA内部事務や、学校施設・学校配布物・配信アプリの利用状況を確認します。<br/><a href="school-duties-vs-pta.html">学校業務とPTA事務の分離を見る</a></p></div>
-</div>
-<div class="case-box"><h3>学校名簿の提供は「慣例の事務」では済まない場合があります</h3><p>大分市では、児童の個人情報をPTA等へ提供したとして、小学校長が地方公務員法違反・守秘義務違反の疑いで書類送検されたと報じられた事例があります。書類送検は有罪確定を意味しませんが、学校が保有する児童・保護者情報をPTA等の任意団体へ提供する運用が、学校職員の守秘義務や個人情報管理に関わる問題であることを示す事例として確認できます。</p><small>新聞切り抜き画像の公開掲載は、著作権・出典表示・掲載許諾を確認したうえで別途判断してください。このページでは事例の要旨のみを掲載しています。</small></div>
-</section>
-<section aria-labelledby="strength" class="home-section"><h2 id="strength">PTA適正化推進委員会の強み</h2>
-<p>このサイトは、一般的な解説だけでなく、全国の教育委員会から得た回答、公文書開示で取得した資料、実際に学校・PTAから配布された文書をもとに、現場で確認できる形に整理している点を特徴としています。</p>
-<div class="reader-grid"><div class="reader-card"><h3><a href="responses.html">全国教育委員会回答DB</a></h3><p>加入、会費、個人情報、教職員関与、学校資源利用について、各地の教育委員会等の回答を確認できます。</p></div><div class="reader-card"><h3><a href="archive.html">公文書開示・行政資料</a></h3><p>学校徴収金、学校関係団体、服務、学校配布文書など、行政文書から確認できる資料を整理しています。</p></div><div class="reader-card"><h3><a href="actual-pta-documents.html">実際のPTA文書・学校配布文書</a></h3><p>入会案内、会費通知、個人情報同意書、役員選出資料など、現場文書の読み方を整理しています。</p></div><div class="reader-card"><h3><a href="kit.html">確認文例・提出キット</a></h3><p>保護者、PTA役員、学校・教育委員会が使える確認文、開示請求、時系列整理、提出メモを用意しています。</p></div></div>
-</section>
-<section aria-labelledby="bookmark" class="home-section"><h2 id="bookmark">教育委員会・学校用しおり</h2>
-<p>教育委員会や学校が、PTAを直接統制するのではなく、学校側の会計・情報・服務・施設・媒体利用を点検するための実務手引です。入退会、学校徴収金、個人情報、教職員関与、学校施設・学校媒体利用の確認に使えます。</p>
-<a class="download-card" download="" href="docs/pta_proper_operation_edu_board_school.pdf"><strong>PTA適正運営のしおり（教育委員会・学校用）PDF</strong><span>入退会の完全自由化、学校徴収金との分離、個人情報提供の整理、教職員関与の範囲、学校施設・学校媒体の利用条件をまとめた実務手引です。</span></a>
-<ul class="home-plain-list"><li>PTA加入は本人の意思確認を前提とする。</li><li>学校名簿をPTAへ当然提供しない。</li><li>PTA会費と学校徴収金を分離する。</li><li>教職員のPTA内部事務代行を避ける。</li><li>学校施設・学校媒体利用は、教育上の支障の有無を確認する。</li></ul>
-</section>
-<section aria-labelledby="order" class="home-section"><h2 id="order">まず読む順番</h2>
-<div class="home-steps"><a class="home-step" href="start.html"><strong>1　全体像を読む</strong><span>PTAの任意性と、現場で起きやすい五つの論点を確認します。</span></a><a class="home-step" href="guide.html"><strong>2　立場別に読む</strong><span>保護者、PTA役員、学校・教育委員会のどの立場で確認するかを分けます。</span></a><a class="home-step" href="responses.html"><strong>3　回答DBで確認する</strong><span>教育委員会回答を、質問類型・論点タグ・本文で確認します。</span></a><a class="home-step" href="evidence.html"><strong>4　根拠へ戻る</strong><span>資料名、作成主体、日付、取得方法を確認し、未確認部分を残します。</span></a></div>
-</section>
-</div>
-</main>
-<footer class="footer"><div class="footer-grid footer-grid--v8">
-<div class="footer-brand-block">
-<h3>PTA適正化推進委員会</h3>
-<a class="yokomusubi-card yokomusubi-card--compact external-link" href="https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/" rel="noopener noreferrer" target="_blank">
-<img alt="よこむすび 横浜市地域活動・ボランティア情報サイト" decoding="async" loading="lazy" src="assets/yokomusubi.png"/>
-<strong>磯子区「よこむすび」掲載団体</strong>
-<span class="yokomusubi-meta">登録番号：磯子12406</span>
-<span class="yokomusubi-meta">分類番号：12-4（市民活動・社会教育推進）</span>
-<span class="sr-only">（外部リンク）</span></a>
-<div class="footer-contact">
-<div>〒235-0021</div>
-<div>神奈川県横浜市磯子区岡村</div>
-<div><a href="tel:07090127772">070-9012-7772</a></div>
-<div><a href="mailto:info@ptaorg.com">info@ptaorg.com</a></div>
-</div>
-</div>
-<div class="footer-outreach-block">
-<h4>公式発信</h4>
-<div class="footer-social-lead">最新資料・論考・動画はこちら</div>
-<div aria-label="公式SNS" class="footer-social footer-social--polished">
-<a aria-label="XでPTA適正化推進委員会を見る" class="sns-card sns-x external-link" href="https://x.com/jjjqqqxxx0852" rel="noopener noreferrer" target="_blank">
-<span class="sns-icon"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M18.244 2H21.5l-7.11 8.123L22.75 22h-6.54l-5.12-6.688L5.23 22H1.99l7.6-8.688L1.25 2h6.704l4.627 6.118L18.244 2Zm-1.143 17.91h1.804L6.87 3.99H4.934L17.1 19.91Z"></path></svg></span>
-<span class="sns-text"><strong>X</strong><small>速報・資料更新</small></span>
-<span class="sr-only">（外部リンク）</span></a>
-<a aria-label="YouTubeでPTA適正化推進委員会を見る" class="sns-card sns-youtube external-link" href="https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A" rel="noopener noreferrer" target="_blank">
-<span class="sns-icon"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M23.5 6.2a3.02 3.02 0 0 0-2.13-2.14C19.49 3.5 12 3.5 12 3.5s-7.49 0-9.37.56A3.02 3.02 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3.02 3.02 0 0 0 2.13 2.14c1.88.56 9.37.56 9.37.56s7.49 0 9.37-.56a3.02 3.02 0 0 0 2.13-2.14A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8ZM9.6 15.6V8.4L15.84 12 9.6 15.6Z"></path></svg></span>
-<span class="sns-text"><strong>YouTube</strong><small>動画で解説</small></span>
-<span class="sr-only">（外部リンク）</span></a>
-<a aria-label="noteで佐藤大の記事を見る" class="sns-card sns-note external-link" href="https://note.com/hiroshisatoh" rel="noopener noreferrer" target="_blank">
-<span class="sns-icon"><svg aria-hidden="true" viewbox="0 0 24 24"><path d="M4 3.5h10.15c3.65 0 5.85 2.15 5.85 5.72V20.5h-4.1V9.74c0-1.67-.83-2.54-2.45-2.54H8.1v13.3H4V3.5Z"></path></svg></span>
-<span class="sns-text"><strong>note</strong><small>論考・研究ノート</small></span>
-<span class="sr-only">（外部リンク）</span></a>
-</div>
-</div>
-<div><h4>立場別</h4><ul><li><a href="guide-parent.html">保護者</a></li><li><a href="guide-pta.html">PTA役員</a></li><li><a href="guide-board.html">教育委員会・学校</a></li><li><a href="guide-research.html">研究者・記者</a></li><li><a href="edu-board-guideline.html">教育委員会向け指針</a></li></ul></div>
-<div><h4>論点</h4><ul><li><a href="membership.html">入会手続</a></li><li><a href="privacy.html">個人情報</a></li><li><a href="fee-collection.html">会費徴収</a></li><li><a href="personnel.html">教職員関与</a></li><li><a href="facilities.html">施設利用</a></li></ul></div>
-<div><h4>資料・支援</h4><ul><li><a href="responses.html">教育委員会の回答</a></li><li><a href="response-index.html">自治体別索引</a></li><li><a href="map.html">自治体マップ</a></li><li><a href="national-archive.html">全国資料館</a></li><li><a href="journal.html">論考・調査報告</a></li><li><a href="research-index.html">論考・資料索引</a></li><li><a href="claim-evidence-ledger.html">根拠対応表</a></li><li><a href="sitemap.html">サイトマップ</a></li><li><a href="donate.html">ご支援・寄付</a></li></ul></div>
-</div><p class="copyright">© PTA適正化推進委員会</p></footer>
-<script defer="" src="js/site.js"></script>
-<a aria-label="ページ先頭へ戻る" class="back-to-top" href="#page-top">↑</a></body></html>
+  <main id="main" class="handbook-home">
+    <nav class="top-category-nav" aria-label="上部カテゴリナビ">
+      <div class="container">
+        <a href="parents.html">保護者</a>
+        <a href="officers.html">PTA役員</a>
+        <a href="board.html">教育委員会・学校</a>
+        <a href="documents.html">実資料</a>
+        <a href="documents-local.html">全国資料</a>
+        <a href="laws.html">法令</a>
+        <a href="articles.html">論考</a>
+        <a href="kit.html">実務キット</a>
+      </div>
+    </nav>
+
+    <section class="handbook-hero portal-hero" aria-labelledby="home-title">
+      <div class="container handbook-readable">
+        <p class="eyebrow">PTA運営適正化ハンドブック</p>
+        <h1 id="home-title">PTA運営を、実資料と根拠から見直す</h1>
+        <p class="lead">PTAは、学校そのものではありません。加入は任意であり、会費の支払いも、個人情報の取扱いも、保護者本人の意思確認を前提に整理されるべきものです。</p>
+        <p>このサイトは、PTA運営を感情論ではなく、実際の文書、教育委員会の回答、開示資料、法令・一次資料から確認するためのWeb版ハンドブックです。まずは自分の立場に近い入口から読み、必要に応じて資料・根拠・論考へ進んでください。</p>
+        <div class="handbook-actions">
+          <a class="button primary" href="parents.html">保護者の方へ</a>
+          <a class="button" href="officers.html">PTA役員の方へ</a>
+          <a class="button" href="board.html">教育委員会・学校関係者の方へ</a>
+          <a class="button ghost" href="documents.html">実資料を見る</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="portal-strip" aria-labelledby="news-title">
+      <div class="container portal-strip-grid">
+        <section class="news-panel">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">News</p>
+            <h2 id="news-title">お知らせ・更新情報</h2>
+          </div>
+          <ul class="news-list">
+            <li><a href="documents.html">実資料・開示資料の読み方を整理しました</a></li>
+            <li><a href="documents-local.html">全国資料を地域別に見る導線を追加しました</a></li>
+            <li><a href="laws.html">法令・一次資料を場面別に確認できるようにしました</a></li>
+            <li><a href="kit.html">実務キットの入口を追加しました</a></li>
+          </ul>
+        </section>
+        <section class="popular-panel" aria-labelledby="popular-title">
+          <div class="section-heading compact-heading">
+            <p class="eyebrow">Quick Access</p>
+            <h2 id="popular-title">よく利用されるページ</h2>
+          </div>
+          <div class="popular-grid">
+            <a href="#three-min"><strong>3分で読む</strong><span>最初の確認ポイント</span></a>
+            <a href="documents-local.html"><strong>全国資料</strong><span>地域別の入口</span></a>
+            <a href="board.html"><strong>教育委員会向け</strong><span>学校関与の点検</span></a>
+            <a href="kit.html"><strong>実務キット</strong><span>照会・整理の型</span></a>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="handbook-section" id="site-index" aria-labelledby="toc-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Table of Contents</p>
+          <h2 id="toc-title">このサイトで確認できること</h2>
+          <p>まず全体像を見てから、必要な章へ進んでください。公開済みの本文ページと資料ページを行き来しながら、論点を順番に確認できます。</p>
+        </div>
+        <ol class="handbook-toc">
+          <li><a href="about.html">はじめに</a></li>
+          <li><a href="#what-is-pta">PTAとは何か</a></li>
+          <li>
+            <a href="officers.html">PTAを運営するにあたって</a>
+            <ul>
+              <li><a href="officers.html#rules">会則の整備</a></li>
+              <li><a href="officers.html#fees">会費の徴収・会計の透明化</a></li>
+              <li><a href="parents.html#withdrawal">入退会の手続</a></li>
+              <li><a href="board.html#nonmember">非会員児童生徒への配慮</a></li>
+              <li><a href="officers.html#selection">役員選出</a></li>
+              <li><a href="officers.html#activities">募集・活動</a></li>
+              <li><a href="parents.html#privacy">個人情報の取扱い</a></li>
+              <li><a href="parents.html#questions">質問への対応</a></li>
+            </ul>
+          </li>
+          <li><a href="#school-pta">学校とPTAの関係</a></li>
+          <li><a href="board.html#staff">教職員の働き方とPTA</a></li>
+          <li><a href="board.html">教育委員会が確認すべきこと</a></li>
+          <li><a href="documents.html">実資料・開示資料</a></li>
+          <li><a href="laws.html">法令・一次資料</a></li>
+          <li><a href="articles.html">論考・記事</a></li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="handbook-section soft" id="three-min" aria-labelledby="three-min-title">
+      <div class="container handbook-readable">
+        <div class="section-heading">
+          <p class="eyebrow">Start Here</p>
+          <h2 id="three-min-title">3分で読む：最初に分けて見ること</h2>
+        </div>
+        <p>PTA問題は、ひとつの書類だけで判断しにくいことがあります。まず、学校の手続、PTAの加入手続、会費の請求、個人情報の提供、学校アプリでの通知を分けて見てください。</p>
+        <p>次に、入会申込記録があるか、PTA会費と学校徴収金が同じ流れに入っていないか、学校が持つ保護者情報がPTAへ渡っていないかを確認します。ここまで整理すると、保護者、PTA役員、教育委員会のどこで確認すべき問題なのかが見えやすくなります。</p>
+        <div class="check-box">
+          <h3>まず見る資料</h3>
+          <ul>
+            <li>PTA入会案内・入会申込書</li>
+            <li>PTA会費と学校徴収金の案内</li>
+            <li>学校アプリ・連絡ツールのPTA通知</li>
+            <li>個人情報提供の説明文・同意書</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section" id="reading-guide" aria-labelledby="reading-title">
+      <div class="container handbook-readable">
+        <div class="section-heading">
+          <p class="eyebrow">Reading Guide</p>
+          <h2 id="reading-title">読み方ガイド</h2>
+        </div>
+        <p>このサイトは、結論だけを拾うためのページではなく、文書を見ながら論点を確認するためのハンドブックです。まず立場別ページで大筋を読み、次に資料ページで実際の文書を確認し、必要に応じて法令・一次資料と論考を参照してください。</p>
+        <div class="reference-grid">
+          <a href="parents.html">保護者向けの読み方</a>
+          <a href="officers.html">PTA役員向けの読み方</a>
+          <a href="board.html">教育委員会・学校向けの読み方</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section soft" aria-labelledby="basic-title">
+      <div class="container handbook-layout">
+        <aside class="chapter-aside">
+          <h2 id="basic-title">PTA運営の基本</h2>
+          <p>まず、学校とPTAを同じものとして扱わないことが出発点です。</p>
+        </aside>
+        <div class="handbook-article">
+          <section class="handbook-chapter" id="what-is-pta">
+            <h3><span>1</span>PTAとは何か</h3>
+            <p>PTAは、保護者と教職員が協力し、子どもたちの学校生活や地域での育ちを支えるために活動してきた団体です。学校行事への協力、広報、地域活動、学習環境の支援など、学校ごとにさまざまな活動があります。</p>
+            <p>一方で、PTAは学校そのものではありません。学校の制度や入学手続と一体のものとして扱われると、保護者は加入や会費を学校の義務のように受け止めやすくなります。まず「学校の手続」と「PTAの手続」を分けて見ることが必要です。</p>
+          </section>
+          <section class="handbook-chapter" id="voluntary">
+            <h3><span>2</span>PTAは任意団体である</h3>
+            <p>PTAへの加入は、保護者本人の意思確認を前提に整理されるべきものです。入会申込書があるか、加入しない場合の説明があるか、退会できることが分かるかは、保護者だけでなくPTA役員や学校も確認しておきたい点です。</p>
+            <div class="note-box">
+              <h4>確認の出発点</h4>
+              <p>「みんな入っているから」ではなく、誰が、いつ、どの説明を受け、どの範囲に同意したのかを記録で確認できる状態にすることが、後のトラブルを減らします。</p>
+            </div>
+          </section>
+          <section class="handbook-chapter" id="school-pta">
+            <h3><span>3</span>学校とPTAの関係</h3>
+            <p>学校がPTA案内を配布したり、学校アプリでPTA通知を送ったり、学校徴収金とPTA会費を一体的に扱ったりすると、両者の境界は見えにくくなります。学校が関与している部分については、PTA内部の問題としてだけではなく、学校運営上の整理も必要になります。</p>
+            <p>学校とPTAが協力すること自体を否定する必要はありません。重要なのは、協力する範囲、情報の扱い、会費の流れ、教職員の関与を文書で説明できるようにすることです。</p>
+          </section>
+          <section class="handbook-chapter" id="social-education">
+            <h3><span>4</span>社会教育関係団体としてのPTA</h3>
+            <p>PTAは、学校と協力しながらも、会員の自治によって運営される団体として整理されます。学校や教育委員会がPTAを直接支配するのではなく、学校が関与している部分について適切に点検する、という切り分けが大切です。</p>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section" id="roles" aria-labelledby="roles-title">
+      <div class="container">
+        <div class="section-heading">
+          <h2 id="roles-title">立場別に読む</h2>
+          <p>同じPTA問題でも、保護者、役員、教育委員会・学校関係者では確認すべき資料と責任の範囲が異なります。</p>
+        </div>
+        <div class="role-reading-grid">
+          <article class="reading-card">
+            <h3>保護者の方へ</h3>
+            <p>学校から届いたPTA案内が、学校手続の一部に見えて不安なときに読むページです。入会申込書、会費、非加入・退会、子どもへの不利益、個人情報、学校アプリ通知を順に確認します。</p>
+            <a class="button primary" href="parents.html">本文を読む</a>
+          </article>
+          <article class="reading-card">
+            <h3>PTA役員の方へ</h3>
+            <p>責められない運営にするために、会員記録、会則、会費徴収、会計、個人情報、役員選出、学校との役割分担を整理するページです。改善の順番を本文で確認できます。</p>
+            <a class="button primary" href="officers.html">本文を読む</a>
+          </article>
+          <article class="reading-card">
+            <h3>教育委員会・学校関係者の方へ</h3>
+            <p>PTAは教育委員会の管理下にありません。しかし学校が配布、回収、徴収、通知、個人情報提供、事務処理、施設利用に関与する場合、その関与部分は確認対象になります。</p>
+            <a class="button primary" href="board.html">本文を読む</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section soft" aria-labelledby="evidence-title">
+      <div class="container handbook-readable">
+        <div class="section-heading">
+          <h2 id="evidence-title">実資料から確認する</h2>
+        </div>
+        <p>このサイトの強みは、抽象的なPTA論ではなく、実際の案内文、会費徴収文書、学校通知、教育委員会回答、開示請求で得た資料をもとに確認できる点にあります。文書に何が書かれ、何が書かれていないのかを見ることで、PTA運営の問題点が具体的に見えてきます。</p>
+        <p>たとえば、PTA入会案内に任意加入の説明があるか、会費徴収文書で学校徴収金とPTA会費が分けて説明されているか、学校アプリの通知で発信主体が示されているか、教育委員会回答が学校の関与をどう整理しているかを確認します。</p>
+        <div class="reference-grid">
+          <a href="documents.html">実資料・開示資料</a>
+          <a href="documents-local.html">教育委員会の回答</a>
+          <a href="documents-theme.html">テーマ別資料</a>
+          <a href="laws.html">法令・一次資料</a>
+          <a href="articles.html">論考・記事</a>
+          <a href="board.html#guideline">ガイドライン</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section" aria-labelledby="regions-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">National Archive</p>
+          <h2 id="regions-title">全国の資料を地域別に見る</h2>
+          <p>教育委員会回答や自治体資料は、地域ごとに前提や回答範囲が異なります。地図や地域別入口から、回答本文、質問文、添付資料の有無を確認できるようにします。</p>
+        </div>
+        <div class="region-overview">
+          <a href="documents-local.html#national-map"><strong>北海道・東北</strong><span>準備中を含む地域入口</span></a>
+          <a href="documents-local.html#national-map"><strong>関東</strong><span>一部資料あり</span></a>
+          <a href="documents-local.html#national-map"><strong>中部</strong><span>一部資料あり</span></a>
+          <a href="documents-local.html#national-map"><strong>近畿</strong><span>一部資料あり</span></a>
+          <a href="documents-local.html#national-map"><strong>中国・四国</strong><span>一部資料あり</span></a>
+          <a href="documents-local.html#national-map"><strong>九州・沖縄</strong><span>準備中を含む地域入口</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section soft" aria-labelledby="issues-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Issues</p>
+          <h2 id="issues-title">現場で起きているPTA運営の論点</h2>
+          <p>PTA問題は、入会、会費、個人情報、学校の関与が重なって現れます。入口を分けて読むことで、どの資料を確認すべきかが見えやすくなります。</p>
+        </div>
+        <div class="issue-grid">
+          <a href="parents.html#application-record-risk"><strong>入会申込記録</strong><span>会員扱いの根拠を確認します。</span></a>
+          <a href="parents.html#privacy"><strong>個人情報</strong><span>学校保有情報とPTA取得情報を分けます。</span></a>
+          <a href="parents.html#fees"><strong>会費徴収</strong><span>学校徴収金との混在を確認します。</span></a>
+          <a href="board.html#apps"><strong>学校アプリ通知</strong><span>発信主体と配信根拠を見ます。</span></a>
+          <a href="board.html#staff"><strong>教職員関与</strong><span>勤務時間中のPTA事務を点検します。</span></a>
+          <a href="board.html#facilities"><strong>学校施設利用</strong><span>申請・許可・備品使用を確認します。</span></a>
+          <a href="board.html#delegation"><strong>委任契約</strong><span>委任と校務の関係を整理します。</span></a>
+          <a href="board.html#rules"><strong>要綱・内規</strong><span>上位法令との整合性を確認します。</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section" aria-labelledby="pillars-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Three Pillars</p>
+          <h2 id="pillars-title">資料・法令・論考の3本柱</h2>
+        </div>
+        <div class="pillar-grid">
+          <article>
+            <h3>実資料・開示資料</h3>
+            <p>教育委員会回答、学校文書、PTA案内、会計資料など、実際に確認できる資料を整理します。</p>
+            <a class="button small" href="documents.html">資料を見る</a>
+          </article>
+          <article>
+            <h3>法令・一次資料</h3>
+            <p>社会教育法、個人情報保護法、地方公務員法など、PTA運営を確認するための根拠資料を整理します。</p>
+            <a class="button small" href="laws.html">根拠を見る</a>
+          </article>
+          <article>
+            <h3>論考・記事</h3>
+            <p>入会記録、学校徴収金、個人情報、学校アプリ、教職員関与など、論点理解の入口を整理します。</p>
+            <a class="button small" href="articles.html">論考を読む</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="handbook-section soft" aria-labelledby="banner-title">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Guidance</p>
+          <h2 id="banner-title">目的別の導線</h2>
+        </div>
+        <div class="banner-link-row">
+          <a href="documents-local.html"><strong>全国教育委員会回答</strong><span>地域ごとの回答・資料を確認する</span></a>
+          <a href="kit.html"><strong>情報公開・照会キット</strong><span>確認文例と資料整理の型を見る</span></a>
+          <a href="board.html#guideline"><strong>ガイドライン</strong><span>教育委員会・学校管理職向けの整理へ進む</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <section class="footer-about" aria-label="サイト概要">
+        <a class="footer-brand" href="index.html"><span class="footer-mark">PTA</span><span>PTA適正化推進委員会</span></a>
+        <p>保護者、PTA役員、教育委員会・学校関係者が、資料と根拠に戻って話し合うための案内ハブです。</p>
+        <div class="footer-contact">
+          <h2>連絡先</h2>
+          <a href="#">お問い合わせ</a>
+        </div>
+        <div class="footer-feature">資料ハブ</div>
+      </section>
+      <nav class="footer-column" aria-label="公式発信">
+        <h2>公式発信</h2>
+        <a href="#">X</a>
+        <a href="#">YouTube</a>
+        <a href="#">note</a>
+      </nav>
+      <nav class="footer-column" aria-label="立場別">
+        <h2>立場別</h2>
+        <a href="parents.html">保護者</a>
+        <a href="officers.html">PTA役員</a>
+        <a href="board.html">教育委員会・学校</a>
+      </nav>
+      <nav class="footer-column" aria-label="論点">
+        <h2>論点</h2>
+        <a href="parents.html#application">入会手続</a>
+        <a href="parents.html#privacy">個人情報</a>
+        <a href="parents.html#fees">会費徴収</a>
+        <a href="board.html#staff">教職員関与</a>
+        <a href="board.html#facilities">施設利用</a>
+        <a href="board.html#fees">学校徴収金</a>
+      </nav>
+      <nav class="footer-column" aria-label="資料・支援">
+        <h2>資料・支援</h2>
+        <a href="documents-local.html">教育委員会の回答</a>
+        <a href="documents-local.html">自治体別索引</a>
+        <a href="documents.html">全国資料</a>
+        <a href="articles.html">論考・調査報告</a>
+        <a href="laws.html#evidence-map">根拠マップ</a>
+        <a href="index.html#site-index">サイトマップ</a>
+        <a href="support.html">ご支援・寄付</a>
+      </nav>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-inner">
+        <p>掲載資料は公開元へのリンクを基本とし、PDF本体の埋め込みは行いません。</p>
+        <p><a href="about.html">編集方針</a></p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+
+
+
+
+
