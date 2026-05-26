@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>テーマ別資料 | PTA適正化推進委員会</title>
-  <meta name="description" content="PTA運営に関する資料をテーマ別に探すページです。">
+  <title>実務キット | PTA適正化推進委員会</title>
+  <meta name="description" content="PTA運営の確認、情報公開請求、提出文例、聞き取り記録、時系列整理に使う実務キットの入口です。">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/main.js"></script>
@@ -34,44 +34,96 @@
     </nav>
   </header>
 
-  <main id="main">
-    <section class="page-hero">
-      <div class="container">
-        <p class="breadcrumb"><a href="index.html">トップ</a> / テーマ別資料</p>
-        <h1>テーマ別資料</h1>
-        <p>資料を論点別に確認します。実資料は単なる添付物ではなく、入会、会費、個人情報、学校関与がどのように説明されているかを読むための入口です。</p>
-      </div>
-    </section>
-
-    <section class="handbook-section soft" aria-labelledby="theme-guide-title">
+  <main id="main" class="handbook-page">
+    <section class="handbook-hero compact">
       <div class="container handbook-readable">
-        <div class="section-heading">
-          <p class="eyebrow">Theme Guide</p>
-          <h2 id="theme-guide-title">テーマ別に見るときの入口</h2>
-        </div>
-        <p>テーマ別資料では、タグを大量に並べるのではなく、資料の性質と論点を分けて読みます。ひとつの文書に、入会案内、会費、個人情報、学校アプリ、教職員関与が重なっていることもあるため、まず主な論点を選んでから資料一覧へ進んでください。</p>
-        <div class="classification-list">
-          <a href="#theme-list"><strong>入会案内・入会申込</strong><span>加入意思確認、任意加入、申込記録を確認します。</span></a>
-          <a href="#theme-list"><strong>会費徴収・学校徴収金</strong><span>PTA会費と学校費用の区別を確認します。</span></a>
-          <a href="#theme-list"><strong>個人情報</strong><span>学校保有情報とPTA取得情報を分けます。</span></a>
-          <a href="#theme-list"><strong>学校アプリ・連絡ツール</strong><span>発信主体、配信対象、同意の扱いを確認します。</span></a>
-          <a href="#theme-list"><strong>教職員関与・服務</strong><span>校務分掌、勤務時間中のPTA事務を確認します。</span></a>
-          <a href="#theme-list"><strong>学校施設利用</strong><span>申請、許可、備品使用、負担を確認します。</span></a>
-          <a href="#theme-list"><strong>教育委員会回答</strong><span>回答条件、回答日、添付資料の有無を読みます。</span></a>
-          <a href="#theme-list"><strong>監査・住民監査</strong><span>会計や学校関与を確認する前提資料を整理します。</span></a>
-        </div>
+        <p class="breadcrumb"><a href="index.html">トップ</a> / 実務キット</p>
+        <p class="eyebrow">Practical Toolkit</p>
+        <h1>実務キット</h1>
+        <p class="lead">PTA運営を確認するときは、感情的なやり取りよりも、資料、時系列、質問事項を整理することが先です。</p>
+        <p>このページでは、情報公開請求、学校・PTAへの確認文例、聞き取り記録、時系列整理、住民監査請求の準備など、実務で使う道具をまとめます。各キットの公開先が未確定のものは、未リンクの状態にしています。</p>
       </div>
     </section>
 
-    <section class="section" id="theme-list" data-resource-section>
-      <div class="container">
-        <div class="section-header"><h2>テーマから探す <span data-resource-count>0件</span></h2><p>必要な場合はキーワードで検索できます。</p></div>
-        <div class="tool-panel">
-          <div class="filter-bar">
-            <input class="search-box" type="search" placeholder="資料内を検索" aria-label="テーマ別資料を検索" data-resource-search>
-          </div>
-          <div class="resource-grid" data-resource-list data-source="data/documents.json" data-collection="documents" data-empty="該当する資料はありません。"></div>
-        </div>
+    <section class="handbook-section">
+      <div class="container handbook-layout">
+        <aside class="chapter-aside">
+          <h2>キット目次</h2>
+          <nav class="article-toc" aria-label="実務キット目次">
+            <a href="#how-to-use">使い方</a>
+            <a href="#disclosure">情報公開請求</a>
+            <a href="#submission">提出文例</a>
+            <a href="#interview">聞き取り記録</a>
+            <a href="#timeline">時系列整理</a>
+            <a href="#audit">住民監査請求準備</a>
+            <a href="#print">印刷用資料</a>
+            <a href="#diagnosis">適正化診断</a>
+          </nav>
+        </aside>
+
+        <article class="handbook-article">
+          <section class="handbook-chapter" id="how-to-use">
+            <h2><span>1</span>実務キットの使い方</h2>
+            <p>最初に行うのは、手元の資料を日付順に並べ、どの文書が学校から出たものか、どの文書がPTAから出たものかを分けることです。資料が混ざったまま問い合わせると、入会、会費、個人情報、学校関与の論点が一度に絡み、回答もあいまいになりやすくなります。</p>
+            <p>次に、確認したい論点をひとつに絞ります。たとえば「入会申込記録があるか」「PTA会費が学校徴収金と分けられているか」「学校アプリでPTA通知を配信する根拠は何か」というように、質問を短くすると、相手も資料に基づいて回答しやすくなります。</p>
+            <div class="check-box">
+              <h3>共通手順</h3>
+              <ul>
+                <li>資料名、作成主体、配布日、入手方法を記録する</li>
+                <li>学校手続、PTA手続、会費、個人情報、通知を分ける</li>
+                <li>回答は口頭だけでなく、文書やメールで残る形にする</li>
+              </ul>
+            </div>
+          </section>
+
+          <section class="handbook-chapter" id="disclosure">
+            <h2><span>2</span>情報公開請求キット</h2>
+            <p>学校や教育委員会が保有する文書を確認する場合は、情報公開請求や公文書開示請求を使うことがあります。請求するときは、広すぎる表現にせず、対象年度、学校名、文書の種類、論点をできるだけ具体的にします。</p>
+            <p>PTA入会案内、学校徴収金案内、学校アプリ運用資料、個人情報提供の同意書、校務分掌、施設使用許可記録など、確認したい文書を分けて請求することが大切です。</p>
+            <a class="button small" href="#">キットを見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="submission">
+            <h2><span>3</span>提出文例キット</h2>
+            <p>学校やPTAへ確認するときは、相手を断定的に責める文面ではなく、資料と手続の確認に絞るとやり取りがしやすくなります。「いつ、どの文書で、誰が、何を説明したのか」を確認する形にします。</p>
+            <div class="note-box">
+              <h3>文例の考え方</h3>
+              <p>「問題があります」と感じる場面でも、まずは「根拠となる資料を確認したい」「学校が関与している範囲を確認したい」と書くと、論点が整理されます。</p>
+            </div>
+            <a class="button small" href="#">文例を見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="interview">
+            <h2><span>4</span>聞き取り記録テンプレート</h2>
+            <p>口頭で説明を受けた場合は、日時、相手方、説明内容、後日確認する資料を記録します。記録は相手を追及するためだけでなく、自分の理解を整理し、後から文書で確認するための足場になります。</p>
+            <a class="button small" href="#">テンプレートを見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="timeline">
+            <h2><span>5</span>時系列整理テンプレート</h2>
+            <p>PTA関係の問題は、入学説明会、年度初めの案内、会費引落し、学校アプリ通知、総会資料などが時間差で出てきます。時系列に並べると、いつどの説明があり、どの時点で会員扱い・会費請求・個人情報提供が行われたのかが見えます。</p>
+            <a class="button small" href="#">テンプレートを見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="audit">
+            <h2><span>6</span>住民監査請求準備</h2>
+            <p>学校がPTA会費やPTA事務に深く関与している場合、自治体の財務会計行為や公金・私費管理との関係を確認する必要が出ることがあります。ただし、住民監査請求は要件があり、事実関係と対象行為を丁寧に整理する必要があります。</p>
+            <p>このページでは、まず確認すべき文書と時系列整理の入口だけを示します。具体的な請求を行う前には、自治体の制度案内や専門家への相談も検討してください。</p>
+            <a class="button small" href="#">準備項目を見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="print">
+            <h2><span>7</span>印刷用資料キット</h2>
+            <p>学校やPTA、教育委員会へ説明するときは、論点を一枚に整理した資料が役に立ちます。印刷用資料では、入会、会費、個人情報、学校関与の確認ポイントを短くまとめる構成にします。</p>
+            <a class="button small" href="#">印刷用資料を見る</a>
+          </section>
+
+          <section class="handbook-chapter" id="diagnosis">
+            <h2><span>8</span>PTA運営適正化診断</h2>
+            <p>PTA役員や学校関係者が内部点検をする場合は、入会申込記録、会費徴収、個人情報、学校アプリ、教職員関与、施設利用を順に確認します。診断は誰かを責めるためではなく、改善の優先順位を決めるために使います。</p>
+            <a class="button small" href="#">診断項目を見る</a>
+          </section>
+        </article>
       </div>
     </section>
   </main>
@@ -128,7 +180,6 @@
   </footer>
 </body>
 </html>
-
 
 
 
