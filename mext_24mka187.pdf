@@ -1,0 +1,78 @@
+{
+  "siteName": "PTA適正化推進委員会",
+  "brandMark": "POPC",
+  "baseUrl": "https://ptaorg.github.io/pta/",
+  "colors": {
+    "navy": "#0b2a47",
+    "gold": "#d4af37",
+    "background": "#f3f7fb"
+  },
+  "contact": {
+    "postalCode": "〒235-0021",
+    "address": "神奈川県横浜市磯子区岡村",
+    "phone": "070-9012-7772",
+    "email": "info@ptaorg.com",
+    "registration": "磯子12406",
+    "category": "12-4（市民活動・社会教育推進）"
+  },
+  "sns": {
+    "x": "https://x.com/jjjqqqxxx0852",
+    "youtube": "https://www.youtube.com/@PTA%E9%81%A9%E6%AD%A3%E5%8C%96%E6%8E%A8%E9%80%B2%E5%A7%94%E5%93%A1%E4%BC%9A",
+    "note": "https://note.com/hiroshisatoh"
+  },
+  "yokomusubi": {
+    "url": "https://yokomusubi.city.yokohama.lg.jp/organizations/detail/f69c7ad2-cf21-4dfa-87bb-9c891874eb6b/",
+    "title": "磯子区「よこむすび」掲載団体"
+  },
+  "homeCards": [
+    {
+      "title": "入会・会費・個人情報を確認する",
+      "kicker": "保護者",
+      "href": "guide-parent.html",
+      "image": "assets/photo-parent.jpg",
+      "description": "加入意思確認、会費徴収、学校からPTAへの個人情報提供、非会員児童の扱いを整理します。"
+    },
+    {
+      "title": "会則・名簿・会計を点検する",
+      "kicker": "PTA役員",
+      "href": "guide-pta.html",
+      "image": "assets/photo-pta.jpg",
+      "description": "任意団体としての境界、学校依存の整理、会員名簿と会費徴収の分離を確認します。"
+    },
+    {
+      "title": "公私分離と是正方針を確認する",
+      "kicker": "学校・教育委員会",
+      "href": "edu-board-start.html",
+      "image": "assets/photo-board.jpg",
+      "description": "教育委員会向けの確認導線、指針、チェックリスト、回答DB、診断を順に確認します。"
+    },
+    {
+      "title": "教育委員会向けに最初の5ページを読む",
+      "kicker": "教育委員会",
+      "href": "edu-board-start.html",
+      "image": "assets/photo-board.jpg",
+      "description": "公私分離、個人情報、会費徴収、教職員関与、全国回答DBを順番に確認します。"
+    },
+    {
+      "title": "教育委員会の回答を検索する",
+      "kicker": "回答DB",
+      "href": "responses.html",
+      "image": "assets/photo-db.jpg",
+      "description": "自治体別、質問類型別、地図、アコーディオン本文で回答を確認できます。"
+    },
+    {
+      "title": "立場別にリスクを診断する",
+      "kicker": "監査ツール",
+      "href": "audit/index.html",
+      "image": "assets/photo-audit.jpg",
+      "description": "保護者、PTA役員、学校管理職、教育委員会の4つの立場で運用リスクを点検します。"
+    },
+    {
+      "title": "原資料と公開資料を確認する",
+      "kicker": "資料館",
+      "href": "national-archive.html",
+      "image": "assets/photo-archive.jpg",
+      "description": "Excel原本、PDF資料室、分析ページへの導線をまとめています。"
+    }
+  ]
+}

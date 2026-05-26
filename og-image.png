@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+<rect width="64" height="64" rx="10" fill="#0b2a47"/>
+<rect x="4" y="4" width="56" height="56" rx="9" fill="none" stroke="#d4af37" stroke-width="4"/>
+<circle cx="32" cy="32" r="22" fill="#fff8e1" stroke="#d4af37" stroke-width="2"/>
+<text x="32" y="38" text-anchor="middle" font-size="15" font-weight="900" fill="#0b2a47" font-family="Arial,sans-serif">POPC</text>
+</svg>

@@ -1,0 +1,21 @@
+{
+  "items": [
+    {
+      "id": "DOC-JOIN-001",
+      "title": "PTA入会案内の実例",
+      "type": "入会案内",
+      "source": "公文書開示資料 / 提供資料 / 学校配布文書など",
+      "year": "YYYY年度",
+      "file": "materials/documents/DOC-JOIN-001.png",
+      "thumbnail": "materials/documents/DOC-JOIN-001.png",
+      "status": "原資料確認済 / マスキング済 / 確認中",
+      "issues": [
+        "加入意思確認",
+        "任意性",
+        "会費説明"
+      ],
+      "summary": "ここに資料から直接読み取れる事実を短く記載する。",
+      "analysis": "ここに委員会の分析コメントを記載する。事実と混同しない。"
+    }
+  ]
+}
