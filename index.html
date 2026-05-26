@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>PTA適正化推進委員会</title>
-  <meta name="description" content="保護者、PTA役員、教育委員会・学校関係者が、PTA運営の論点を実資料と根拠から確認するための情報ポータルです。">
+  <meta name="description" content="保護者、PTA役員、教育委員会・学校関係者が、PTA運営の論点を実資料と根拠から確認するためのWeb版ハンドブックです。">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="assets/css/style.css">
   <script defer src="assets/js/main.js"></script>
@@ -24,169 +24,146 @@
         </button>
       </div>
     </div>
-    <nav class="menu-panel" id="site-menu" aria-label="サイトメニュー" data-menu-panel>
-      <div class="menu-grid">
-        <section class="menu-group"><h2>はじめに</h2><a href="index.html" data-nav-link>トップ</a><a href="about.html" data-nav-link>このサイトについて</a></section>
-        <section class="menu-group"><h2>立場別に読む</h2><a href="parents.html" data-nav-link>保護者</a><a href="officers.html" data-nav-link>PTA役員</a><a href="board.html" data-nav-link>教育委員会・学校</a></section>
-        <section class="menu-group"><h2>資料を見る</h2><a href="documents.html" data-nav-link>全国資料庫</a><a href="documents-local.html" data-nav-link>教育委員会の回答</a><a href="documents-local.html" data-nav-link>自治体別索引</a><a href="documents-theme.html" data-nav-link>テーマ別資料</a></section>
-        <section class="menu-group"><h2>論点</h2><a href="#">入会手続</a><a href="#">個人情報</a><a href="#">会費徴収</a><a href="#">教職員関与</a><a href="#">施設利用</a></section><section class="menu-group"><h2>根拠を確認する</h2><a href="laws.html" data-nav-link>法令・一次資料</a></section>
-        <section class="menu-group"><h2>論考を読む</h2><a href="articles.html" data-nav-link>論考・調査報告</a></section>
-        <section class="menu-group"><h2>公式発信</h2><a href="#">X</a><a href="#">YouTube</a><a href="#">note</a></section><section class="menu-group"><h2>支援・応援</h2><a href="#">お問い合わせ</a><a href="support.html" data-nav-link>ご支援・寄付</a><a href="#">サイトマップ</a></section>
+    <nav class="menu-panel" id="site-menu" aria-label="サイト目次" data-menu-panel>
+      <div class="menu-intro">
+        <p class="menu-kicker">PTA運営適正化ハンドブック</p>
+        <p>立場別、基本論点、学校との関係、資料・根拠へ直接移動できます。</p>
+      </div>
+      <div class="menu-grid handbook-menu-grid">
+        <section class="menu-group"><h2>はじめに</h2><a href="index.html" data-nav-link>トップ</a><a href="about.html" data-nav-link>このサイトについて</a><a href="support.html" data-nav-link>支援・応援</a></section>
+        <section class="menu-group"><h2>立場別</h2><a href="parents.html" data-nav-link>保護者の方へ</a><a href="officers.html" data-nav-link>PTA役員の方へ</a><a href="board.html" data-nav-link>教育委員会・学校関係者の方へ</a></section>
+        <section class="menu-group"><h2>PTA運営の基本</h2><a href="index.html#what-is-pta" data-nav-link>PTAとは何か</a><a href="index.html#voluntary" data-nav-link>任意加入</a><a href="officers.html#rules" data-nav-link>会則</a><a href="officers.html#withdrawal" data-nav-link>入退会手続</a><a href="officers.html#fees" data-nav-link>会費徴収</a><a href="officers.html#fees" data-nav-link>会計の透明化</a><a href="parents.html#privacy" data-nav-link>個人情報</a><a href="officers.html#selection" data-nav-link>役員選出</a><a href="officers.html#activities" data-nav-link>募集・活動</a></section>
+        <section class="menu-group"><h2>学校との関係</h2><a href="index.html#school-pta" data-nav-link>学校とPTAの分離</a><a href="board.html#fees" data-nav-link>学校徴収金</a><a href="board.html#apps" data-nav-link>学校アプリ・連絡ツール</a><a href="board.html#staff" data-nav-link>教職員関与</a><a href="board.html#facilities" data-nav-link>学校施設利用</a><a href="#">コミュニティ・スクール</a><a href="board.html#staff" data-nav-link>働き方改革とPTA</a></section>
+        <section class="menu-group"><h2>資料を見る</h2><a href="documents.html" data-nav-link>実資料・開示資料</a><a href="documents-local.html" data-nav-link>自治体別資料</a><a href="documents-theme.html" data-nav-link>テーマ別資料</a><a href="documents-local.html#national-map" data-nav-link>全国資料</a><a href="documents-local.html#local-resource-list" data-nav-link>教育委員会の回答</a></section>
+        <section class="menu-group"><h2>根拠を確認する</h2><a href="laws.html" data-nav-link>法令・一次資料</a><a href="documents.html#mext-materials" data-nav-link>文部科学省資料</a><a href="documents-local.html" data-nav-link>自治体資料</a><a href="articles.html" data-nav-link>参考文献</a></section>
+        <section class="menu-group"><h2>論考・記事</h2><a href="articles.html" data-nav-link>論考一覧</a><a href="#">調査報告</a></section>
       </div>
     </nav>
   </header>
 
-  <main id="main" class="portal-main">
-    <section class="portal-banner" aria-labelledby="home-title">
-      <div class="container">
-        <div class="portal-banner-inner">
-          <div class="portal-banner-copy">
-            <h1 id="home-title">PTA運営を、実資料と根拠から見直す</h1>
-            <p>保護者・PTA役員・教育委員会・学校関係者が、それぞれの立場から確認できる資料と論点を整理しています。</p>
-          </div>
-          <div class="banner-links" aria-label="主要ページ">
-            <a href="documents.html">実資料を見る</a>
-            <a href="laws.html">法令を確認する</a>
-            <a href="articles.html">論考を読む</a>
-          </div>
+  <main id="main" class="handbook-home">
+    <section class="handbook-hero" aria-labelledby="home-title">
+      <div class="container handbook-readable">
+        <p class="eyebrow">PTA運営適正化ハンドブック</p>
+        <h1 id="home-title">PTA運営を、実資料と根拠から見直す</h1>
+        <p class="lead">PTAは、学校そのものではありません。加入は任意であり、会費の支払いも、個人情報の取扱いも、保護者本人の意思確認を前提に整理されるべきものです。</p>
+        <p>しかし実際の学校現場では、PTA加入が入学手続の一部のように扱われたり、入会申込の記録がないまま会員扱いされたり、学校アプリや学校徴収金を通じてPTA活動と学校業務の境界が見えにくくなっている例があります。</p>
+        <p>このサイトは、PTA運営を感情論ではなく、実際の文書、教育委員会の回答、開示資料、法令・一次資料から確認するためのWeb版ハンドブックです。保護者、PTA役員、教育委員会・学校関係者が、それぞれの立場から同じ資料と根拠に戻って考えられるように整理しています。</p>
+        <div class="handbook-actions">
+          <a class="button primary" href="parents.html">保護者の方へ</a>
+          <a class="button" href="officers.html">PTA役員の方へ</a>
+          <a class="button" href="board.html">教育委員会・学校関係者の方へ</a>
+          <a class="button ghost" href="documents.html">実資料を見る</a>
         </div>
       </div>
     </section>
 
-    <section class="portal-band role-compact-section" aria-labelledby="role-title">
+    <section class="handbook-section" aria-labelledby="toc-title">
       <div class="container">
-        <div class="portal-section-head">
-          <h2 id="role-title">立場別に確認する</h2>
-          <p>まずは自分の立場に近い入口から確認してください。</p>
+        <div class="section-heading">
+          <p class="eyebrow">Table of Contents</p>
+          <h2 id="toc-title">このサイトで確認できること</h2>
+          <p>まず全体像を見てから、必要な章へ進んでください。公開済みの本文ページと資料ページを行き来しながら、論点を順番に確認できます。</p>
         </div>
-        <div class="role-compact-grid">
-          <a class="role-compact-card" href="parents.html">
-            <span class="compact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8-1a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5ZM3.5 19c.7-3 2.4-4.8 4.5-4.8s3.8 1.8 4.5 4.8H3.5Zm9.4-1.5c.6-2 1.8-3.3 3.3-3.3 1.8 0 3.2 1.4 3.8 3.3h-7.1Z"/></svg>
-            </span>
-            <strong>保護者の方へ</strong>
-            <span>入会申込、会費、非加入・退会、個人情報提供の根拠を確認します。</span>
-            <em>読む</em>
-          </a>
-          <a class="role-compact-card" href="officers.html">
-            <span class="compact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M5 3h11l3 3v15H5V3Zm2 2v14h10V8h-3V5H7Zm2 6h6v2H9v-2Zm0 4h6v2H9v-2Z"/></svg>
-            </span>
-            <strong>PTA役員の方へ</strong>
-            <span>会員名簿、会費徴収、個人情報取扱い、学校との役割分担を整理します。</span>
-            <em>読む</em>
-          </a>
-          <a class="role-compact-card" href="board.html">
-            <span class="compact-icon" aria-hidden="true">
-              <svg viewBox="0 0 24 24"><path d="M4 9 12 4l8 5v2H4V9Zm2 4h2v5h2v-5h4v5h2v-5h2v7H6v-7Z"/></svg>
-            </span>
-            <strong>教育委員会・学校関係者の方へ</strong>
-            <span>学校の関与範囲、個人情報、教職員服務、徴収金との区別を確認します。</span>
-            <em>読む</em>
-          </a>
-        </div>
+        <ol class="handbook-toc">
+          <li><a href="about.html">はじめに</a></li>
+          <li><a href="#what-is-pta">PTAとは何か</a></li>
+          <li>
+            <a href="officers.html">PTAを運営するにあたって</a>
+            <ul>
+              <li><a href="officers.html#rules">会則の整備</a></li>
+              <li><a href="officers.html#fees">会費の徴収・会計の透明化</a></li>
+              <li><a href="parents.html#withdrawal">入退会の手続</a></li>
+              <li><a href="board.html#nonmember">非会員児童生徒への配慮</a></li>
+              <li><a href="officers.html#selection">役員選出</a></li>
+              <li><a href="officers.html#activities">募集・活動</a></li>
+              <li><a href="parents.html#privacy">個人情報の取扱い</a></li>
+              <li><a href="parents.html#questions">質問への対応</a></li>
+            </ul>
+          </li>
+          <li><a href="#school-pta">学校とPTAの関係</a></li>
+          <li><a href="board.html#staff">教職員の働き方とPTA</a></li>
+          <li><a href="board.html">教育委員会が確認すべきこと</a></li>
+          <li><a href="documents.html">実資料・開示資料</a></li>
+          <li><a href="laws.html">法令・一次資料</a></li>
+          <li><a href="articles.html">論考・記事</a></li>
+        </ol>
       </div>
     </section>
 
-    <section class="portal-band portal-news-section" aria-labelledby="news-title">
-      <div class="container">
-        <div class="portal-two-column">
-          <section class="portal-panel" aria-labelledby="news-title">
-            <div class="portal-section-head compact">
-              <h2 id="news-title">お知らせ・更新情報</h2>
-              <p>ページ整理や確認項目の更新をお知らせします。</p>
-            </div>
-            <ol class="news-list" data-updates-list>
-              <li><a href="documents.html">実資料・開示資料の分類を整理しました</a></li>
-              <li><a href="laws.html">法令・一次資料ページを更新しました</a></li>
-              <li><a href="parents.html">保護者向け確認項目を追加しました</a></li>
-              <li><a href="board.html">教育委員会・学校関係者向けページを更新しました</a></li>
-            </ol>
+    <section class="handbook-section soft" aria-labelledby="basic-title">
+      <div class="container handbook-layout">
+        <aside class="chapter-aside">
+          <h2 id="basic-title">PTA運営の基本</h2>
+          <p>まず、学校とPTAを同じものとして扱わないことが出発点です。</p>
+        </aside>
+        <div class="handbook-article">
+          <section class="handbook-chapter" id="what-is-pta">
+            <h3><span>1</span>PTAとは何か</h3>
+            <p>PTAは、保護者と教職員が協力し、子どもたちの学校生活や地域での育ちを支えるために活動してきた団体です。学校行事への協力、広報、地域活動、学習環境の支援など、学校ごとにさまざまな活動があります。</p>
+            <p>一方で、PTAは学校そのものではありません。学校の制度や入学手続と一体のものとして扱われると、保護者は加入や会費を学校の義務のように受け止めやすくなります。まず「学校の手続」と「PTAの手続」を分けて見ることが必要です。</p>
           </section>
-          <section class="portal-panel portal-about-summary" aria-labelledby="summary-title">
-            <div class="portal-section-head compact">
-              <h2 id="summary-title">確認の入口</h2>
-              <p>資料の性質を分けて読み、必要に応じて法令・論考へ進みます。</p>
-            </div>
-            <div class="summary-links">
-              <a href="documents.html"><strong>実資料</strong><span>公開資料・開示資料</span></a>
-              <a href="laws.html"><strong>根拠</strong><span>法令・一次資料</span></a>
-              <a href="articles.html"><strong>論考</strong><span>記事・実務解説</span></a>
+          <section class="handbook-chapter" id="voluntary">
+            <h3><span>2</span>PTAは任意団体である</h3>
+            <p>PTAへの加入は、保護者本人の意思確認を前提に整理されるべきものです。入会申込書があるか、加入しない場合の説明があるか、退会できることが分かるかは、保護者だけでなくPTA役員や学校も確認しておきたい点です。</p>
+            <div class="note-box">
+              <h4>確認の出発点</h4>
+              <p>「みんな入っているから」ではなく、誰が、いつ、どの説明を受け、どの範囲に同意したのかを記録で確認できる状態にすることが、後のトラブルを減らします。</p>
             </div>
           </section>
+          <section class="handbook-chapter" id="school-pta">
+            <h3><span>3</span>学校とPTAの関係</h3>
+            <p>学校がPTA案内を配布したり、学校アプリでPTA通知を送ったり、学校徴収金とPTA会費を一体的に扱ったりすると、両者の境界は見えにくくなります。学校が関与している部分については、PTA内部の問題としてだけではなく、学校運営上の整理も必要になります。</p>
+            <p>学校とPTAが協力すること自体を否定する必要はありません。重要なのは、協力する範囲、情報の扱い、会費の流れ、教職員の関与を文書で説明できるようにすることです。</p>
+          </section>
+          <section class="handbook-chapter" id="social-education">
+            <h3><span>4</span>社会教育関係団体としてのPTA</h3>
+            <p>PTAは、学校と協力しながらも、会員の自治によって運営される団体として整理されます。学校や教育委員会がPTAを直接支配するのではなく、学校が関与している部分について適切に点検する、という切り分けが大切です。</p>
+          </section>
         </div>
       </div>
     </section>
 
-    <section class="portal-band documents-compact-section" aria-labelledby="documents-title">
+    <section class="handbook-section" aria-labelledby="roles-title">
       <div class="container">
-        <div class="portal-section-head">
-          <h2 id="documents-title">実資料から確認する</h2>
-          <p>公開元や資料の性質を確認しながら、資料カテゴリごとに探せます。一部の資料カテゴリは準備中です。</p>
+        <div class="section-heading">
+          <h2 id="roles-title">立場別に読む</h2>
+          <p>同じPTA問題でも、保護者、役員、教育委員会・学校関係者では確認すべき資料と責任の範囲が異なります。</p>
         </div>
-        <div class="document-compact-grid">
-          <a class="document-compact-card" href="#"><span class="doc-icon" aria-hidden="true"><i></i><i></i></span><strong>PTA入会案内</strong><em>資料を見る</em></a>
-          <a class="document-compact-card" href="#"><span class="doc-icon" aria-hidden="true"><i></i><i></i></span><strong>入会申込書・会員管理</strong><em>資料を見る</em></a>
-          <a class="document-compact-card" href="#"><span class="doc-icon gold" aria-hidden="true"><i></i><i></i></span><strong>学校徴収金とPTA会費</strong><em>資料を見る</em></a>
-          <a class="document-compact-card" href="#"><span class="doc-icon green" aria-hidden="true"><i></i><i></i></span><strong>学校アプリ・連絡ツール</strong><em>資料を見る</em></a>
-          <a class="document-compact-card" href="documents-local.html"><span class="doc-icon blue" aria-hidden="true"><i></i><i></i></span><strong>教育委員会の回答</strong><em>資料を見る</em></a>
-          <a class="document-compact-card" href="#"><span class="doc-icon" aria-hidden="true"><i></i><i></i></span><strong>会計・支出資料</strong><em>資料を見る</em></a>
+        <div class="role-reading-grid">
+          <article class="reading-card">
+            <h3>保護者の方へ</h3>
+            <p>学校から届いたPTA案内が、学校手続の一部に見えて不安なときに読むページです。入会申込書、会費、非加入・退会、子どもへの不利益、個人情報、学校アプリ通知を順に確認します。</p>
+            <a class="button primary" href="parents.html">本文を読む</a>
+          </article>
+          <article class="reading-card">
+            <h3>PTA役員の方へ</h3>
+            <p>責められない運営にするために、会員記録、会則、会費徴収、会計、個人情報、役員選出、学校との役割分担を整理するページです。改善の順番を本文で確認できます。</p>
+            <a class="button primary" href="officers.html">本文を読む</a>
+          </article>
+          <article class="reading-card">
+            <h3>教育委員会・学校関係者の方へ</h3>
+            <p>PTAは教育委員会の管理下にありません。しかし学校が配布、回収、徴収、通知、個人情報提供、事務処理、施設利用に関与する場合、その関与部分は確認対象になります。</p>
+            <a class="button primary" href="board.html">本文を読む</a>
+          </article>
         </div>
       </div>
     </section>
 
-    <section class="portal-band topic-compact-section" aria-labelledby="topic-title">
-      <div class="container">
-        <div class="portal-section-head">
-          <h2 id="topic-title">PTA運営の主な論点</h2>
-          <p>入会、会費、個人情報、学校の関与を分けて確認します。</p>
+    <section class="handbook-section soft" aria-labelledby="evidence-title">
+      <div class="container handbook-readable">
+        <div class="section-heading">
+          <h2 id="evidence-title">実資料から確認する</h2>
         </div>
-        <div class="topic-pill-grid">
-          <a href="#">入会申込記録</a>
-          <a href="#">個人情報の取得・提供</a>
-          <a href="#">会費徴収</a>
-          <a href="#">学校徴収金との混同</a>
-          <a href="#">学校アプリでの通知</a>
-          <a href="#">教職員のPTA事務関与</a>
-          <a href="#">学校施設利用</a>
-          <a href="#">教育委員会の確認責任</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="portal-band pillar-compact-section" aria-labelledby="pillar-title">
-      <div class="container">
-        <div class="portal-section-head">
-          <h2 id="pillar-title">資料・法令・論考</h2>
-          <p>法令・一次資料と論考・記事は分けて掲載しています。</p>
-        </div>
-        <div class="pillar-compact-grid">
-          <a class="pillar-compact-card" href="documents.html">
-            <strong>実資料・開示資料</strong>
-            <span>教育委員会回答、学校文書、PTA案内、会計資料などを整理します。</span>
-            <em>資料を見る</em>
-          </a>
-          <a class="pillar-compact-card" href="laws.html">
-            <strong>法令・一次資料</strong>
-            <span>社会教育法、個人情報保護法、地方教育行政法などを確認します。</span>
-            <em>根拠を見る</em>
-          </a>
-          <a class="pillar-compact-card" href="articles.html">
-            <strong>論考・記事</strong>
-            <span>入会記録、学校徴収金、個人情報などの論点を読む入口です。</span>
-            <em>論考を読む</em>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <section class="portal-band about-block-section" aria-labelledby="about-title">
-      <div class="container">
-        <div class="about-block">
-          <h2 id="about-title">このサイトについて</h2>
-          <p>PTAは、学校そのものではありません。加入は任意であり、会費の支払いも、個人情報の取扱いも、保護者本人の意思確認を前提に整理されるべきものです。</p>
-          <p>しかし実際の学校現場では、PTA加入が入学手続の一部のように扱われたり、入会申込の記録がないまま会員扱いされたり、学校アプリや学校徴収金を通じてPTA活動と学校業務の境界が見えにくくなっている例があります。</p>
-          <p>PTA適正化推進委員会は、各地の教育委員会回答、開示請求で得た実資料、実際のPTA案内文・会計資料・学校通知等をもとに、PTA運営の問題を検証し、確認すべき点を整理します。</p>
+        <p>このサイトの強みは、抽象的なPTA論ではなく、実際の案内文、会費徴収文書、学校通知、教育委員会回答、開示請求で得た資料をもとに確認できる点にあります。文書に何が書かれ、何が書かれていないのかを見ることで、PTA運営の問題点が具体的に見えてきます。</p>
+        <p>たとえば、PTA入会案内に任意加入の説明があるか、会費徴収文書で学校徴収金とPTA会費が分けて説明されているか、学校アプリの通知で発信主体が示されているか、教育委員会回答が学校の関与をどう整理しているかを確認します。</p>
+        <div class="reference-grid">
+          <a href="documents.html">実資料・開示資料</a>
+          <a href="documents-local.html">教育委員会の回答</a>
+          <a href="documents-theme.html">テーマ別資料</a>
+          <a href="laws.html">法令・一次資料</a>
+          <a href="articles.html">論考・記事</a>
+          <a href="board.html#guideline">ガイドライン</a>
         </div>
       </div>
     </section>
@@ -227,7 +204,7 @@
         <h2>資料・支援</h2>
         <a href="documents-local.html">教育委員会の回答</a>
         <a href="documents-local.html">自治体別索引</a>
-        <a href="documents.html">全国資料庫</a>
+        <a href="documents.html">全国資料</a>
         <a href="articles.html">論考・調査報告</a>
         <a href="#">サイトマップ</a>
         <a href="support.html">ご支援・寄付</a>

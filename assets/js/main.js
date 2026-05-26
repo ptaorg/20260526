@@ -31,8 +31,9 @@
 
   const currentPage = window.location.pathname.split("/").pop() || "index.html";
   document.querySelectorAll("[data-nav-link]").forEach((link) => {
-    const href = link.getAttribute("href");
-    if (href === currentPage) {
+    const href = link.getAttribute("href") || "";
+    const hrefPage = href.split("#")[0].split("?")[0] || (href.startsWith("#") ? "" : href);
+    if (hrefPage === currentPage) {
       link.setAttribute("aria-current", "page");
     }
   });
@@ -72,12 +73,6 @@
       .join("");
   }
 
-  function tagMarkup(tags) {
-    return (tags || [])
-      .map((tag) => `<span class="tag">${escapeHtml(tag)}</span>`)
-      .join("");
-  }
-
   function cardMarkup(item, collection) {
     const href = escapeHtml(item.url || "#");
     const externalAttrs = item.url && item.url !== "#" ? ' target="_blank" rel="noopener noreferrer"' : "";
@@ -104,27 +99,9 @@
         <p>${escapeHtml(item.summary || item.description || "")}</p>
         ${item.sourceNote ? `<p class="source-note">${escapeHtml(item.sourceNote)}</p>` : ""}
         ${keyPoints}
-        <div class="tag-list">${tagMarkup(item.themes)}</div>
         ${note ? `<p class="resource-note">${escapeHtml(note)}</p>` : ""}
       </article>
     `;
-  }
-
-  function uniqueSorted(items, key) {
-    const values = new Set();
-    items.forEach((item) => {
-      const source = key === "themes" ? item.themes || [] : [item[key]];
-      source.filter(Boolean).forEach((value) => values.add(value));
-    });
-    return Array.from(values).sort((a, b) => a.localeCompare(b, "ja"));
-  }
-
-  function buildFilterChips(group, values, label) {
-    if (!group) return;
-    const chips = [`<button class="filter-chip" type="button" data-filter-value="all" aria-pressed="true">すべて</button>`]
-      .concat(values.map((value) => `<button class="filter-chip" type="button" data-filter-value="${escapeHtml(value)}" aria-pressed="false">${escapeHtml(value)}</button>`));
-    group.innerHTML = chips.join("");
-    group.setAttribute("aria-label", label);
   }
 
   async function initResourceList(list) {
@@ -132,13 +109,9 @@
     const collection = list.dataset.collection;
     const section = list.closest("[data-resource-section]") || document;
     const searchInput = section.querySelector("[data-resource-search]");
-    const themeGroup = section.querySelector('[data-filter-group="theme"]');
-    const typeGroup = section.querySelector('[data-filter-group="type"]');
     const countEl = section.querySelector("[data-resource-count]");
     const state = {
-      query: "",
-      theme: "all",
-      type: "all"
+      query: ""
     };
 
     let items = [];
@@ -157,18 +130,13 @@
     const fixedTheme = list.dataset.filterTheme;
     const fixedType = list.dataset.filterType;
 
-    if (themeGroup) buildFilterChips(themeGroup, uniqueSorted(items, "themes"), "テーマで絞り込む");
-    if (typeGroup) buildFilterChips(typeGroup, uniqueSorted(items, "type"), "種別で絞り込む");
-
     function filteredItems() {
       return items.filter((item) => {
         const queryOk = !state.query || textForSearch(item).includes(state.query);
         const scopeOk = !fixedScope || item.scope === fixedScope;
         const fixedThemeOk = !fixedTheme || (item.themes || []).includes(fixedTheme);
         const fixedTypeOk = !fixedType || item.type === fixedType || item.category === fixedType;
-        const themeOk = state.theme === "all" || (item.themes || []).includes(state.theme);
-        const typeOk = state.type === "all" || item.type === state.type || item.category === state.type;
-        return queryOk && scopeOk && fixedThemeOk && fixedTypeOk && themeOk && typeOk;
+        return queryOk && scopeOk && fixedThemeOk && fixedTypeOk;
       });
     }
 
@@ -183,20 +151,6 @@
     searchInput?.addEventListener("input", (event) => {
       state.query = normalize(event.target.value.trim());
       render();
-    });
-
-    [themeGroup, typeGroup].forEach((group) => {
-      group?.addEventListener("click", (event) => {
-        const button = event.target.closest("[data-filter-value]");
-        if (!button) return;
-        const value = button.dataset.filterValue;
-        const groupType = group.dataset.filterGroup;
-        state[groupType] = value;
-        group.querySelectorAll("[data-filter-value]").forEach((chip) => {
-          chip.setAttribute("aria-pressed", String(chip === button));
-        });
-        render();
-      });
     });
 
     render();
